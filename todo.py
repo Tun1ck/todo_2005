@@ -18,15 +18,20 @@ while True:
   userAnswer = input("Введите команду:\n")
 
   if userAnswer == "add":
-   print('Работает!')
+   userDate = input("введите дату:\n") 
+   userTask = input("Что нужно сделать?\n")
+
+
+   todo[userDate] = userTask
+   print(f"На{userDate}число добавлена задача'{userTask}'")
   elif userAnswer == "help":
-    print('Работает!')
+    print(HELP)
   elif userAnswer == "show":
     print('Работает!')
   elif userAnswer == "done":
     print('Работает!')
   elif userAnswer == "exit":
-    print('Работает!') 
+    break
   else:
     print("Error.Нет такой команды")   
     print("Введите help для вывода списка команд")
