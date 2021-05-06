@@ -28,7 +28,7 @@ while True:
     print(HELP)
   elif userAnswer == "show":
     for date in todo.keys():
-     print(f"[ {date} - {todo[date]} ]")  
+     print(f"[ {date} ] - {todo[date]} ")  
   elif userAnswer == "done":
     print('Работает!')
   elif userAnswer == "exit":
